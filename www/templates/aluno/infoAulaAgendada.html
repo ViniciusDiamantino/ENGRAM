@@ -1,0 +1,26 @@
+<ion-view title="Informações da aula" id="page7" class=" ">
+    <ion-content padding="true" class="has-header">
+        <h2 style="font-weight:400;text-align:center" class="positive">Aula de Física</h2>
+        <div class="item item-body">
+            <p id="informaEsDaAula-markdown2" style="color:#000000;" class=" ">
+                Data: 10/10/2016 às 13:00 <br />Professor: Carlos Augusto. <br />Status: Aguradando confirmação do aluno
+                <br />Outras informações: <br />É necessário levar livros. A aula será realizada no Centro Cultural.
+            </p>
+            <button id="informaEsDaAula-button6" class=" button button-balanced  button-block " ng-click="confirmacao()">Confirmar agendamento da aula</button>
+         </div>
+    </ion-content>
+</ion-view>
+
+<script id="templates/confirmacao.html" type="text/ng-template">
+    <ion-modal-view>
+        <ion-header-bar class="bar bar-header bar-positive">
+            <h1 class="title">Confirmação</h1>
+        </ion-header-bar>
+        <ion-content class="padding">
+                <p>Deseja confirmar o agendamento da aula?</p>
+                <button class="button button-full button-positive" ng-click="modal.hide()">Sim</button>
+                <button class="button button-clear button-primary" ng-click="modal.hide()">Cancelar</button>
+
+        </ion-content>
+    </ion-modal-view>
+</script>

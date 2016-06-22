@@ -1,0 +1,60 @@
+<ion-view title="Informações do instrutor" id="page6" class=" ">
+    <ion-content padding="true" class="has-header">
+        <h2  style="color:#0F5A04;font-weight:400; text-align:center;" >José Silva</h2>
+        <div class="card">
+            <div class="item item-divider">
+                <strong class="balanced">Informações básicas e currículo</strong>
+            </div>
+            <div class="item item-text-wrap">
+                <p><strong>Idade:</strong> 25 anos </p>
+
+                <strong>Currículo:</strong><br />
+                <strong>Licenciatura em matemática (2000 a 2004)</strong><br />
+                <p>Licenciatura em Matemática da Universidade de São Paulo</p>
+                <strong>Mestrado em Matemática e Estatística (2005 a 2007)</strong><br />
+                <p>Mestrado realizado na Universidade de São Paulo</p>
+                <strong>Professor de Matemática para ensino Médio (2005 a 2015)</strong><br />
+                <p>
+                    Professor nos colégios:<br />
+                    Escola São Marcos (2005 a 2008)<br />
+                    ETEC  Vila da Paz (2009 a 2015)<br />
+                </p>
+                <strong>Professor de aulas particulares (2007 até hoje)</strong><br />
+                <p>Ministro aulas particulares a alunos de ensino fundamental, médio e vestibulandos.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="item item-divider">
+                <strong class="balanced">Informações sobre aulas</strong>
+            </div>
+            <div class="item item-text-wrap">
+                <p><strong>Link com vídeo-exemplo:</strong> https://www.youtube.com/watch?v=Ilqku-u7lg4 </p>
+                <p><strong>Locais atendidos:</strong> Zona sul da cidade de São Paulo</p>
+                <p><strong>Valor da hora/aula:</strong> R$ 30,00 por hora</p>
+            </div>
+            <div class="item item-divider">
+                <button class=" button button-balanced  button-block icon-left ion-plus" ng-click="nova()">Enviar Mensagem</button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
+
+<script id="templates/modal.html" type="text/ng-template">
+    <ion-modal-view>
+        <ion-header-bar class="bar bar-header bar-positive">
+            <h1 class="title">Nova mensagem</h1>
+            <button class="button button-clear button-primary" ng-click="modal.hide()">Cancelar</button>
+        </ion-header-bar>
+        <ion-content class="padding">
+            <div class="list">
+                <label class="item item-input">
+                    <span class="input-label">Digite a mensagem aqui</span>
+                    <input ng-model="newUser.firstName" type="text">
+                </label>
+                
+                <button class="button button-balanced  button-block icon-right ion-android-send" ng-click="modal.hide()" ui-sref="aluno.mensagens">Enviar</button>
+            </div>
+        </ion-content>
+    </ion-modal-view>
+</script>
+

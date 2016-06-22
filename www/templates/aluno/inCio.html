@@ -1,0 +1,68 @@
+<ion-view title="Início" id="page1" class=" ">
+    <ion-content padding="true" class="has-header">
+        <h1 id="inCio-heading1" style="color:#3140D1;font-weight:400;text-align:center;" class=" ">Bem-vindo</h1>
+        <form id="inCio-form1" class="list ">
+
+            <div class="list card">
+                <a ui-sref="aluno.mensagens" class="item item-icon-left item-positive">
+                    <i class="icon ion-email-unread"></i>
+                    <h2 style="color:white;">3 novas mensagens!</h2>
+                    <p style="color:white;">Ver detalhes</p>
+                </a>
+                <div class="spacer" style="height: 10px;"></div>
+                <a ui-sref="aluno.aulas" class="item item-icon-left item-balanced">
+                    <i class="icon ion-easel"></i>
+                    <h2 style="color:white;">1 aula agendada!</h2>
+                    <p style="color:white;">Ver detalhes</p>
+                </a>
+            </div>
+
+            <h4 id="inCio-heading2">Pesquise por instrutores</h4>
+
+            <div class="bar bar-header item-input-inset">
+                
+                <label class="item-input-wrapper">
+                    <input type="search" placeholder="Digite uma área de conhecimento">
+                </label>
+                <button class="button button-balanced icon ion-ios-search" ng-click="mostra()"></button>
+            </div>
+            <div class="spacer" style="height: 20px;"></div>
+            <div ng-show="resultado">
+                <h3 id="inCio-heading2" style="color:dodgerblue; text-align:center">Resultado da pesquisa</h3>
+                <a ui-sref="aluno.informacoesInstrutores" class="item item-avatar item-icon-left positive">
+
+                    <i class="icon ion-person"></i>
+                    <h2positive>
+                        José Silva
+                        <p>Álgebra, Geometria, Física</p>
+                        <p>Já realizou 15 aulas</p>
+                    </h2positive>
+                </a>
+                <a ui-sref="#" class="item item-avatar item-icon-left positive">
+                    <i class="icon ion-person"></i>
+                    <h2positive>
+                        Felipe Augusto
+                        <p>Álgebra, Química, Física</p>
+                        <p>Já realizou 13 aulas</p>
+                    </h2positive>
+                </a>
+                <a ui-sref="#" class="item item-avatar item-icon-left positive">
+                    <i class="icon ion-person"></i>
+                    <h2positive>
+                        Antônio Henrique
+                        <p>Álgebra, Geometria, Biologia</p>
+                        <p>Já realizou 10 aulas</p>
+                    </h2positive>
+                </a>
+                <a ui-sref="#" class="item item-avatar item-icon-left positive">
+                    <i class="icon ion-person"></i>
+                    <h2positive>
+                        Lucas Gomes
+                        <p>Álgebra, Informática, Física</p>
+                        <p>Já realizou 8 aulas</p>
+                    </h2positive>
+                </a>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>

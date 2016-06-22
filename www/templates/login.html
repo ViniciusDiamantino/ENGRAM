@@ -1,0 +1,24 @@
+<ion-view title="Login" id="page6" class=" ">
+    <ion-content padding="true" class="has-header">
+        <h3 id="login-heading7" style="color:#282EC2;text-align:center;" class=" ">Coloque o seu login e senha</h3>
+        <form id="login-form3" class="list ">
+            <ion-list id="login-list5" class=" ">
+                <label class="item item-input " id="login-input2">
+                    <span class="input-label">Login:</span>
+                    <input type="text" placeholder="">
+                </label>
+                <label class="item item-input " id="login-input3">
+                    <span class="input-label">Senha:</span>
+                    <input type="password" placeholder="">
+                </label>
+            </ion-list>
+            <h4 id="login-heading8" style="color:#1522B6;">Quem é você?</h4>
+            <ion-radio value="aluno" ng-click="mostraBotao(1)">Aluno</ion-radio>
+            <ion-radio value="instrutor" ng-click="mostraBotao(2)">Instrutor</ion-radio>
+            <div class="spacer" style="height: 40px;"></div>
+            <a ui-sref="aluno.inCio" id="loginaluno" style="color: #FDFCFC;" ng-show="mostraAluno" class=" button button-balanced  button-block ">Entrar</a>
+            <a ui-sref="instrutor.inCio" id="logininstrutor" style="color: #FDFCFC;" ng-show="mostraInstrutor" class=" button button-balanced  button-block ">Entrar</a>
+
+        </form>
+    </ion-content>
+</ion-view>

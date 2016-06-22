@@ -1,0 +1,77 @@
+<ion-view title="Avaliações" id="page11" class=" ">
+    <ion-content padding="true" class="has-header">
+        <h2 id="mensagens-heading3" style="color:#2C39CC;text-align:center;" class=" ">Avaliações</h2>
+
+        <div class=" button-bar ">
+            <button class=" button button-balanced" ng-controller="otimoCtrl" ng-click="modal.show()">Ótimo</button>
+            <button class=" button button-positive" ng-controller="bomCtrl" ng-click="modal.show()">Bom</button>
+            <button class=" button button-energized" ng-controller="regularCtrl" ng-click="modal.show()">Regular</button>
+            <button class=" button button-assertive" ng-controller="ruimCtrl" ng-click="modal.show()">Ruim</button>
+        </div>
+    </ion-content>
+</ion-view>
+
+<script id="avaliacoes/otimo.html" type="text/ng-template">
+    <ion-modal-view>
+        <ion-header-bar class="bar bar-header bar-balanced">
+            <h1 class="title">Ótimo</h1>
+            <button class="button button-clear button-primary" ng-click="modal.hide()">Voltar</button>
+        </ion-header-bar>
+        <ion-content class="padding">
+            <h2 style="text-align:center;" class="balanced">Avaliações de nível ótimo</h2>
+            <div class="item item-text-wrap balanced-border">
+                Justificativa 1<br>
+                Justificativa 2<br>
+            </div>
+        </ion-content>
+        </ion-modal-view>
+</script>
+
+<script id="avaliacoes/bom.html" type="text/ng-template">
+    <ion-modal-view>
+        <ion-header-bar class="bar bar-header bar-positive">
+            <h1 class="title">Bom</h1>
+            <button class="button button-clear button-primary" ng-click="modal.hide()">Voltar</button>
+        </ion-header-bar>
+        <ion-content class="padding">
+            <h2 style="text-align:center;" class="positive">Avaliações de nível bom</h2>
+            <div class="item item-text-wrap positive-border">
+                Justificativa 1<br>
+                Justificativa 2<br>
+            </div>
+        </ion-content>
+        </ion-modal-view>
+</script>
+
+<script id="avaliacoes/regular.html" type="text/ng-template">
+    <ion-modal-view>
+        <ion-header-bar class="bar bar-header bar-energized">
+            <h1 class="title">Regular</h1>
+            <button class="button button-clear button-primary" ng-click="modal.hide()">Voltar</button>
+        </ion-header-bar>
+        <ion-content class="padding">
+            <h2 style="text-align:center;" class="energized">Avaliações de nível regular</h2>
+            <div class="item item-text-wrap energized-border">
+                Justificativa 1<br>
+                Justificativa 2<br>
+            </div>
+        </ion-content>
+        </ion-modal-view>
+</script>
+
+<script id="avaliacoes/ruim.html" type="text/ng-template">
+    <ion-modal-view>
+        <ion-header-bar class="bar bar-header bar-assertive">
+            <h1 class="title">Ruim</h1>
+            <button class="button button-clear button-primary" ng-click="modal.hide()">Voltar</button>
+        </ion-header-bar>
+        <ion-content class="padding">
+            <h2 style="text-align:center;" class="assertive">Avaliações de nível ruim</h2>
+            <div class="item item-text-wrap assertive-border">
+                Justificativa 1<br>
+                Justificativa 2<br>
+            </div>
+        </ion-content>
+        </ion-modal-view>
+</script>
+

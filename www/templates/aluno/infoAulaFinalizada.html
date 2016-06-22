@@ -1,0 +1,44 @@
+<ion-view title="Informações da aula" id="page10" class=" ">
+    <ion-content padding="true" class="has-header">
+        <h2 id="informaEsDaAula-heading6" style="font-weight: 400; text-align: center">Aula de Matemática</h2>
+        <div class="item item-body " id="informaEsDaAula-list-item-container2">
+            <p style="color:#000000;" class=" ">
+                Data: 10/10/2016 às 13:00 <br />Professor: Mateus Felipe. <br />Status: Finalizada.
+                <br />Outras informações: <br />É necessário levar régua e caderno em folhas quadriculadas. A aula será realizada no centro cultural
+            </p>
+            <a id="avaliacao" class=" button button-positive  button-block button-clear " ng-click="modal.show()">Avaliar instrutor</a>
+                    </div>
+
+
+    </ion-content>
+
+    <script id="templates/avaliacao.html" type="text/ng-template">
+        <ion-modal-view>
+            <ion-header-bar class="bar bar-header bar-positive">
+                <h1 class="title">Inserir avaliação</h1>
+                <button class="button button-clear button-primary" ng-click="modal.hide()">Cancelar</button>
+            </ion-header-bar>
+            <ion-content class="padding">
+                <div class="list">
+                    <label class="item item-input item-select">
+                        <span class="input-label">Que nota o instrutor merece?</span>
+                        <select>
+                            <option>Ótimo</option>
+                            <option>Bom</option>
+                            <option>Regular</option>
+                            <option>Ruim</option>
+                            <option></option>
+                        </select>
+                    </label>
+                    <label class="item item-input">
+                        <span class="input-label">Justifique a nota (opcional)</span>
+                        <textarea rows="3"></textarea>
+                    </label>
+                    <button class="button button-full button-positive" ng-click="modal.hide()">OK</button>
+                </div>
+            </ion-content>
+        </ion-modal-view>
+    </script>
+
+</ion-view>
+

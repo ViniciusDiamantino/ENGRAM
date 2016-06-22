@@ -1,0 +1,55 @@
+<ion-view title="Informações da aula" id="page5" class=" ">
+    <ion-content padding="true" class="has-header">
+        <h2 id="informaEsDaAula-heading6" style="font-weight: 400; text-align: center">Aula de Álgebra</h2>
+        <div class="item item-body " id="informaEsDaAula-list-item-container2">
+            <p style="color:#000000;" class=" ">
+                Data: 10/10/2016 às 13:00 <br />Aluno: Aluno 3. <br />Status: Em processo de reagendamento
+                <br />Outras informações: <br />É necessário levar régua e caderno em folhas quadriculadas. A aula será realizada no centro cultural
+            </p>
+            <button id="informaEsDaAula-button6" class=" button button-balanced  button-block " ng-click="modal.show()">Inserir nova data para esta aula</button>
+                    </div>
+
+
+    </ion-content>
+
+    <script id="templates/modal.html" type="text/ng-template">
+        <ion-modal-view>
+            <ion-header-bar class="bar bar-header bar-positive">
+                <h1 class="title">Nova Aula</h1>
+                <button class="button button-clear button-primary" ng-click="modal.hide()">Cancelar</button>
+            </ion-header-bar>
+            <ion-content class="padding">
+                <div class="list">
+                    <div class="spacer" style="height: 40px;"></div>
+                    <label class="item item-input item-select">
+                        <div class="input-label">A aula será de que?</div>
+                        <select>
+                            <option selected>Álgebra</option>
+                            <option>Geometria</option>
+                            <option>Física</option>
+                            <option>Informática</option>
+                        </select>
+                    </label>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Que dia acontecerá a aula?</span>
+                        <input class="form-control" type="date" placeholder="Data">
+                    </label>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Horário:</span>
+                        <input class="form-control" type="time" placeholder="HH:MM">
+                    </label>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Mais informações sobre a aula?</span>
+                        <textarea rows="3">Por exemplo: Local e Materiais necessários
+                        </textarea>
+                    </label>
+
+                    <div class="spacer" style="height: 40px;"></div>
+                    <a ui-sref="#" id="login-button10" style="color:#FDFCFC;" class=" button button-balanced">Reagendar</a>
+                </div> 
+            </ion-content>
+        </ion-modal-view>
+    </script>
+
+</ion-view>
+
